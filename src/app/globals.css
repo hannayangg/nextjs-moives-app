@@ -1,21 +1,95 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+    font-family: "Nanum Gothic", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+a {
+    text-decoration: none;
+    color:#333;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    color:#333;
 }
+
+/* 홈 */
+.home {
+    color:#333;
+    transition: color 0.3s ease-in-out;
+}
+
+.home:hover {
+    color: #FF6347;
+}
+
+/* 영화 목록 보기, 영화 추가하기 버튼 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    background-color: #FF7F50;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #FF6347;
+}
+
+.movie-container {
+    display: flex; /* 가로 정렬 */
+    justify-content: space-between; /* 요소 간 최대한 떨어지도록 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+}
+.movie-btn {
+    padding: 16px;
+    margin: 8px;
+    background-color: #FFEBD8;
+    border-radius: 5px;
+}
+.movie-btn:hover {
+    background-color: #f7cea8;
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* 영화 상세보기 */
+.read-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 16px;
+    border: 1px solid #FFEBD8;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.input-line {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-line:focus {
+    border-bottom: 2px solid #FF7F50;
+}
+
+/* .input-line {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-line:focus {
+    border-bottom: 2px solid #FF7F50; */
