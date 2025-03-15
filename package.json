@@ -1,23 +1,12 @@
 {
-  "name": "next-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "movies-api",
+  "version": "1.0.0",
+  "description": "JSON Server API for movies",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "json-server --watch db.json --port 4000 --host 0.0.0.0"
   },
   "dependencies": {
-    "next": "^15.1.6",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.2",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "json-server": "^0.17.0"
   }
 }
